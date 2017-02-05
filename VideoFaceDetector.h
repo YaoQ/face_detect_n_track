@@ -1,8 +1,8 @@
 #pragma once
 
-#include <opencv2\core.hpp>
-#include <opencv2\highgui\highgui.hpp>
-#include <opencv2\objdetect\objdetect.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/objdetect/objdetect.hpp>
 
 class VideoFaceDetector
 {
@@ -18,7 +18,6 @@ public:
     cv::CascadeClassifier*  faceCascade() const;
     void                    setResizedWidth(const int width);
     int                     resizedWidth() const;
-	bool					isFaceFound() const;
     cv::Rect                face() const;
     cv::Point               facePosition() const;
     void                    setTemplateMatchingMaxDuration(const double s);
